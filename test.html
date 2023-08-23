@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Perfect Scrollbar -->
+        <link rel="stylesheet" href="/assets/cdns/perfectScrollbar.min.css">
+        <script src="/assets/cdns/perfectScrollbar1.min.js"></script>
+        <script src="/assets/cdns/perfectScrollbar2.min.js"></script>
+
+        <title>PerfectScrollbar Example</title>
+        <style>
+            #container {
+                position: relative;
+                width: 600px;
+                height: 700px;
+                overflow: auto;
+                /* Important to hide the default scrollbar */
+                background-color: black;
+            }
+
+            .cont {
+                background-color: green;
+                width: 400px;
+                height: 100px;
+            }
+
+            /* Custom styling for scrollbar track */
+            .ps__rail-y {
+                background-color: rgb(255, 0, 43) !important;
+                /* Track background color */
+                border-radius: 4px !important;
+                /* Rounded corners for the track */
+                /* width: fit-content; */
+            }
+
+            /* Custom styling for scrollbar thumb */
+            .ps__thumb-y {
+                background-color: #b30ddd;
+                /* Thumb background color */
+                border-radius: 4px;
+                /* Rounded corners for the thumb */
+                width: 14px;
+                /* Thumb width */
+            }
+
+            /* Styling for scrollbar thumb on hover */
+            .ps__thumb-y:hover {
+                background-color: #0056b3;
+                /* Adjust color on hover */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <!-- More .cont elements... -->
+        </div>
+        <script>
+            $(document).ready(function () {
+                const ps = new PerfectScrollbar('#container');
+            });
+        </script>
+    </body>
+
+</html>
